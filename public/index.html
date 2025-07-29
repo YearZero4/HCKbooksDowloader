@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Book Downloader</title>
+ <link href="/css/output.css" rel="stylesheet">
+</head>
+<body class="bg-black text-white h-screen flex flex-col gap-5">
+ <div class="flex justify-center">
+  <div class="rounded-sm mt-5 w-[90%] sm:w-[40%] rounded-sm flex justify-center overflow-hidden">
+   <input spellcheck="false" 
+    placeholder="Type the name of the book"
+    class="border border-gray-500 focus:border-white focus:outline-none w-full p-3 bg-black text-white"
+    type="text" id="name">
+   <button onclick="search(document.getElementById('name').value)" class="hover:cursor-pointer hover:bg-blue-600 bg-blue-500 px-5 text-white">SEARCH</button>
+  </div>
+ </div>
+ <div class="flex justify-center items-center">
+  <button id="download" class="flex bg-blue-500 w-[50%] sm:w-[20%] hover:cursor-pointer hover:bg-blue-600 justify-center items-center p-1 rounded-lg gap-3">
+   <span>Descargar ZIP</span>
+   <img class="h-10 w-10" src="/images/download.png">
+  </button>
+ </div>
+ <div class="flex justify-center h-auto flex-wrap">
+  <div id="div-links" class="rounded-lg p-5 flex justify-center h-auto flex-wrap w-full sm:w-[80%] gap-3">
+  </div>
+ </div>
+ <script src="/js/links.js"></script>
+</body>
+</html>

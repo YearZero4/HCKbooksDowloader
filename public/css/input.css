@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+
+
+a {
+  @apply w-40 h-auto text-center p-2 break-words block;
+}
+
+
+
+#link{
+ @apply bg-gray-800 overflow-hidden flex justify-center items-center max-h-20 rounded-lg text-xs w-[48%] sm:w-40 h-auto text-center break-words flex-wrap;
+}
